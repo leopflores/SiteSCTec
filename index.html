@@ -13,7 +13,9 @@
 
         <nav> <!--Seção de Navegação do Site-->
             <ul><!--Lista n ordenada de links do menu-->
-                <li>Sobre mim</li>
+                <a href="#Sobre">
+                    <li>Sobre mim</li>
+                </a>
                 <li>Projetos</li>
                 <li>Contato</li>
                 <!--<li>Sobre mim</li>-->
@@ -22,7 +24,7 @@
 
     </header>
 
-    <section>
+    <section id="Sobre">
         <h2>Sobre mim</h2>
 
         <img src="https://media.licdn.com/dms/image/v2/D4E03AQEeRNIMAxQ7rg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711063283128?e=1779321600&v=beta&t=Cg9ojVBpRbrZfZ4b7Va_yryTt0af25RELfhXz7QkNN4"
@@ -31,23 +33,100 @@
         <article>
 
             <p>
-                Meu nome é leleo e eu gosto de pastel
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus iste incidunt quae saepe vel
+                quaerat unde, praesentium, dignissimos fugit consequatur nostrum at accusantium voluptate repudiandae
+                nisi totam explicabo id possimus?
             </p>
 
         </article>
 
         <aside>
-            <h3>Habilidades</h3>
+            <h3 id="Habilidades">Habilidades</h3>
 
             <ul>
-                
+
                 <li>Power Automate</li>
                 <li>Power Apps</li>
                 <li>Power BI</li>
                 <li>MES</li>
 
             </ul>
-        </aside>
+        </aside> <br>
+
+        <h3>Matriz de Habilidades</h3>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Inicante</td>
+                    <td>Capaz de contruir estruturas semânticas responsivas</td>
+                </tr>
+
+                <tr>
+                    <td>Power Automate</td>
+                    <td>Intermediário</td>
+                    <td>Capaz de construir fluxos associados a bancos de dados para fluxo de informações</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+
+    <section id="Projetos">
+
+        <h2>Projetos</h2>
+
+        <ul>
+            <li>Automação de integração de dados via power automate</li>
+            <li>Aproximação de pi via o método de monte carlo</li>
+
+        </ul>
+
+    </section>
+
+    <section id="Contato">
+        <h2>Contato</h2>
+
+        <form action="">
+
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="label" required> <br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"> <br>
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" name="telefone"> <br>
+
+            <label for="assunto">Nome: </label>
+            <select name="assunto" id="assunto">
+                <option value="orcamento">Orçamento</option>
+                <option value="duvida">Dúvidas</option>
+            </select> <br>
+
+            <label for="mensagem">Mensagem: </label>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea> <br>
+
+
+            <input type="checkbox" id="inscricao">
+            <label for="inscricao">Cheque esse se vc eh legau</label><br>
+
+            <input type="submit" value="Enviar Mensagem">
+
+
+        </form>
+
 
     </section>
 </body>
